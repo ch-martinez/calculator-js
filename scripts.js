@@ -30,12 +30,13 @@ const checked = (e) => {
 
 const writeResult = () => {
     result.textContent = eval(operation.textContent);
+    result.textContent = result.textContent.substring(0,13)
     operationComplete = true;
 }
 
 /* Muestra por pantalla la operation*/
 const writeOperation = (key) => {
-    if (!checked(key)) {
+    if (!checked(key) && operation.textContent.length < 22) {
         /* if (operation.textContent == '0' && key != '.') operation.textContent = '' */
 
         /* Si se realizo la operacion y se ingresa un operador, utiliza el resultado junto a la nueva operacion */
