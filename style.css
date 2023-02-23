@@ -1,34 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
 body{
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-family: Roboto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.btn{
-    height: 80px;
-    width: 80px;
-    font-size: large;
-    border: none;
-    cursor: pointer;
-    /* margin: 3px; */
-}
-.btn__fun{
-    background-color: hsl(7, 100%, 79%);
-}
-
-.btn__num{
-}
-
-.btn__op{
-    background-color: hsl(202, 100%, 79%);
-}
-
-.btn__eq{
-    background-color: hsl(39, 100%, 79%);
 }
 
 .container{
@@ -37,7 +19,8 @@ body{
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    padding: 15px;
+    padding: 10px;
+    gap: 10px
 }
 
 .display{
@@ -47,24 +30,53 @@ body{
     flex-direction: column;
     align-items: end;
     background-color: #e2e2e2;
-    margin-bottom: 15px;
+    padding: 7px;
 }
 
 .display__value{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: x-large;
     color: #474747;
-    margin: 5px;
+    margin: 2px;
     margin-right: 12px;
 }
 
 .--result{
-    color: #6b5a8d;
+    color: #625a72;
+    font-size: 2.5rem;
 }
 
 .pad{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    
+    gap: 4px;
+}
+
+.btn{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #b4b4b42f;
+}
+
+.btn__fun{
+    background-color: hsl(45, 91%, 86%);
+}
+
+.btn__num{
+}
+
+.btn__op{
+    background-color: hsl(202, 100%, 89%);
+}
+
+.btn__eq{
+    background-color: hsl(138, 100%, 90%);
 }
